@@ -1,11 +1,12 @@
 import React from 'react';
+import './BusList.css';
 
 function BusList({ buses }) {
   return (
-    <div>
+    <div className="bus-list">
       {buses.length > 0 ? (
         buses.map(bus => (
-          <div key={bus.id} style={{ border: '1px solid #ddd', padding: '10px', margin: '10px 0' }}>
+          <div key={bus.id} className="bus-card">
             <h2>{bus.busNumber}</h2>
             <p><strong>From:</strong> {bus.from}</p>
             <p><strong>To:</strong> {bus.to}</p>

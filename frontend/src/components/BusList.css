@@ -1,0 +1,49 @@
+/* BusList.css */
+
+.bus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bus-card {
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffebcc, #ffcc99);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bus-card h2 {
+  color: #cc6600;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.bus-card p {
+  color: #333;
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.bus-card p strong {
+  color: #004d99;
+}
+
+.bus-number {
+  color: #0066cc;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.loading-message {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+}
